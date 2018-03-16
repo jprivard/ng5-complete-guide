@@ -1,5 +1,7 @@
+<input type="text" (input)="onUpdateServerName($event)">
 <button [disabled]="!allowNewServer" 
         (click)="onCreateServer()">Add Server</button>
+{{ serverName }}
 <p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
